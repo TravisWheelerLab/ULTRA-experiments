@@ -1,0 +1,6 @@
+To run the ULTRA repeating accuracy experiment, run:
+```
+sh create_seq_analyze.sh
+python3 results.py
+```
+Results from the paper can be seen in splitting_results.xlsx

@@ -1,0 +1,12 @@
+Generate sequence using:
+`python3 gen_seq.py "60at.fa" 1000000000 0.6`
+Analyze the sequence using:
+
+```
+ultra --min_unit 0 -i 0 -d 0 --out ultra.bed 60at.fa
+tantan -f 1 60at.fa > tantan_repeats.out
+trf 2 5 7 80 10 50 2000 -l 10 -h -d
+mv 60at.fa.2.5.7.80.10.50.2000.dat trf.out
+```
+
+Results from the paper can be found in figure.ipynb
